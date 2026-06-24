@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Medical Clinic with Male and Female Doctors in Whitby | Dunlop St Medical Center - Discover more about Medical Clinic with Male and Female Doctors in Whitby..">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-with-male-and-female-doctors-in-whitby">
+  <link rel="icon" href="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/logo.jpeg" type="image/x-icon">
+  <title>Medical Clinic with Male and Female Doctors in Whitby | Dunlop St Medical Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --bg:       #ffffff;
+      --surface:  #f1f5f9;
+      --surface-2:#e2e8f0;
+      --dark:     #0f172a;
+      --mid:      #334155;
+      --muted:    #64748b;
+      --border:   #e2e8f0;
+      --accent:   #2563eb;
+      --accent-h: #1d4ed8;
+      --accent-pale: #dbeafe;
+      --cyan:     #0ea5e9;
+      --white:    #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.03em;
+    }
+
+    /* ── NAVBAR ── */
+    .upper-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 52px;
+      height: 68px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand-name a {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--dark);
+      text-decoration: none;
+      letter-spacing: -0.04em;
+    }
+
+    .brand-name a span { color: var(--accent); }
+
+    .menu-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .menu-links a {
+      color: var(--mid);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .menu-links a:hover {
+      background: var(--surface);
+      color: var(--dark);
+    }
+
+    .menu-links .contact-btn {
+      background: var(--accent) !important;
+      color: var(--white) !important;
+      padding: 8px 20px !important;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s !important;
+    }
+
+    .menu-links .contact-btn:hover {
+      background: var(--accent-h) !important;
+    }
+
+    /* dropdown */
+    .dropdown { position: relative; display: inline-block; }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      background: var(--white);
+      min-width: 230px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 16px 40px rgba(15,23,42,0.12);
+      z-index: 200;
+      overflow: hidden;
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+
+    .dropdown-content::-webkit-scrollbar { width: 5px; }
+    .dropdown-content::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    .dropdown-content.drop-up { top: auto; bottom: calc(100% + 6px); }
+    .dropdown:hover .dropdown-content { display: block; }
+
+    .dropdown-content ul { list-style: none; padding: 6px; }
+
+    .dropdown-content a {
+      color: var(--mid) !important;
+      padding: 9px 14px !important;
+      display: block;
+      font-size: 0.85rem;
+      border-radius: 6px;
+      transition: background 0.12s, color 0.12s;
+    }
+
+    .dropdown-content a:hover {
+      background: var(--surface) !important;
+      color: var(--accent) !important;
+    }
+
+    /* ── HERO ── */
+    #home {
+      position: relative;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      background: var(--dark);
+      overflow: hidden;
+    }
+
+    /* diagonal accent slab — the signature element */
+    #home::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -80px;
+      width: 520px;
+      height: 680px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--cyan) 100%);
+      clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
+      opacity: 0.15;
+    }
+
+    #home::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 64px;
+      background: var(--white);
+      clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 96px 52px 120px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 20px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 2px;
+      background: var(--cyan);
+    }
+
+    .hero-inner h1 {
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
+
+    .hero-inner h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero-accent-line {
+      width: 56px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--cyan));
+      border-radius: 2px;
+      margin-top: 8px;
+    }
+
+    /* ── BANNER ── */
+    .banner-container { width: 100%; overflow: hidden; line-height: 0; }
+    .banner-image { width: 100%; height: 380px; object-fit: cover; display: block; }
+
+    /* ── INTRODUCTION ── */
+    #introduction {
+      background: var(--white);
+      padding: 88px 0 64px;
+    }
+
+    #introduction .max-w-7xl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 52px;
+    }
+
+    .heading h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: var(--dark);
+      position: relative;
+      padding: 20px 28px 20px 32px;
+      background: var(--surface);
+      border-radius: 8px;
+      margin-bottom: 32px;
+      letter-spacing: -0.04em;
+    }
+
+    .heading h1::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--accent), var(--cyan));
+      border-radius: 4px 0 0 4px;
+    }
+
+    .intro p {
+      font-size: 1.05rem;
+      color: var(--mid);
+      line-height: 1.85;
+      max-width: 820px;
+      margin: 0 auto 22px;
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin: 32px 0;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+
+    .toc ul li a {
+      color: var(--mid);
+      font-weight: 500;
+      font-size: 0.875rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.15s;
+    }
+
+    .toc ul li a::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .toc ul li a:hover { color: var(--accent); }
+
+    /* ── CONTENT SECTIONS ── */
+    #content-images {
+      background: var(--surface);
+      padding: 80px 0;
+    }
+
+    #content-images .max-w-7xl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 52px;
+    }
+
+    .content-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      margin-bottom: 40px;
+      gap: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--white);
+      transition: box-shadow 0.25s;
+    }
+
+    .content-row:hover {
+      box-shadow: 0 12px 48px rgba(15,23,42,0.1);
+    }
+
+    .content-row.img-left .content-img-wrap  { order: 1; }
+    .content-row.img-left .content-text-wrap  { order: 2; }
+    .content-row.img-right .content-text-wrap { order: 1; }
+    .content-row.img-right .content-img-wrap  { order: 2; }
+
+    .content-img-wrap {
+      overflow: hidden;
+      min-height: 400px;
+      position: relative;
+    }
+
+    .content-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .content-row:hover .content-img-wrap img { transform: scale(1.04); }
+
+    .content-text-wrap {
+      padding: 48px 52px;
+      background: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .content-row.img-right .content-text-wrap {
+      background: var(--surface);
+    }
+
+    .content-text-wrap h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.04em;
+    }
+
+    .content-text-wrap h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      color: var(--dark);
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .content-text-wrap p {
+      color: var(--mid);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+
+    .content-text-wrap ul,
+    .content-text-wrap ol {
+      color: var(--mid);
+      font-size: 0.93rem;
+      line-height: 1.8;
+      padding-left: 0;
+      margin-bottom: 14px;
+      list-style: none;
+    }
+
+    .content-text-wrap ul li,
+    .content-text-wrap ol li {
+      margin-bottom: 7px;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .content-text-wrap ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .content-text-wrap ol { counter-reset: ol-counter; }
+    .content-text-wrap ol li { counter-increment: ol-counter; }
+    .content-text-wrap ol li::before {
+      content: counter(ol-counter) '.';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 0.85rem;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-pale);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .sub-section {
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      margin-bottom: 14px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .sub-section:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 16px rgba(37,99,235,0.08);
+    }
+
+    .sub-section h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--dark);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .sub-section p { color: var(--muted); font-size: 0.875rem; line-height: 1.65; }
+
+    @media (max-width: 768px) {
+      .content-row { grid-template-columns: 1fr; }
+      .content-row.img-left .content-img-wrap,
+      .content-row.img-left .content-text-wrap,
+      .content-row.img-right .content-img-wrap,
+      .content-row.img-right .content-text-wrap { order: unset; }
+      .content-img-wrap { min-height: 220px; }
+      .content-text-wrap { padding: 28px 24px; }
+    }
+
+    /* ── FAQs ── */
+    #faqs {
+      background: var(--white);
+      padding: 88px 0;
+    }
+
+    #faqs .max-w-7xl {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    #faqs h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      font-weight: 700;
+      color: var(--dark);
+      text-align: center;
+      margin-bottom: 10px;
+      letter-spacing: -0.04em;
+    }
+
+    #faqs .faq-subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 48px;
+      font-size: 0.95rem;
+    }
+
+    .faq-section { display: flex; flex-direction: column; gap: 8px; }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .faq-item:hover { border-color: var(--accent); }
+
+    .faq-question {
+      cursor: pointer;
+      padding: 18px 20px;
+      background: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.93rem;
+      color: var(--dark);
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-family: 'Space Grotesk', sans-serif;
+      transition: background 0.15s;
+    }
+
+    .faq-question:hover { background: var(--surface); }
+
+    .faq-question .faq-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+      color: var(--accent);
+      transition: transform 0.25s, background 0.2s;
+    }
+
+    .faq-open .faq-question { background: var(--accent-pale); }
+    .faq-open .faq-question .faq-icon { transform: rotate(45deg); background: var(--accent); color: var(--white); border-color: var(--accent); }
+
+    .faq-answer {
+      display: none;
+      padding: 16px 20px;
+      background: var(--surface);
+      color: var(--mid);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-open .faq-answer { display: block; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.55);
+      padding: 64px 0 32px;
+    }
+
+    footer .max-w-7xl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 52px;
+    }
+
+    footer .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    @media (max-width: 768px) {
+      footer .grid { grid-template-columns: 1fr; }
+    }
+
+    footer h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--white);
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    footer p, footer a {
+      font-size: 0.85rem;
+      line-height: 1.85;
+      color: rgba(255,255,255,0.5);
+    }
+
+    footer a { text-decoration: none; transition: color 0.15s; }
+    footer a:hover { color: var(--accent); }
+    footer ul { list-style: none; padding: 0; }
+    footer ul li { margin-bottom: 9px; }
+
+    footer ul li a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer ul li a::before {
+      content: '›';
+      color: var(--accent);
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .footer-bottom {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    /* ── WHEEL LINKS ── */
+    .wheel-links-wrapper {
+      margin-top: 36px;
+      padding: 26px;
+      background: var(--surface);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    /* ── FULL SECTION ── */
+    .full-section { width: 100%; padding: 20px; text-align: center; }
+
+    /* ── MAP ── */
+    .map-embed iframe {
+      border-radius: 10px;
+      box-shadow: 0 8px 32px rgba(15,23,42,0.1);
+      width: 100%;
+      max-width: 1100px;
+      height: 450px;
+      border: none;
+    }
+
+    /* ── SCROLL ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .anim { animation: fadeUp 0.55s ease both; }
+    .anim-d1 { animation-delay: 0.08s; }
+    .anim-d2 { animation-delay: 0.18s; }
+    .anim-d3 { animation-delay: 0.28s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .anim { animation: none; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .upper-menu { padding: 0 18px; }
+      .menu-links { gap: 2px; }
+      .menu-links a { padding: 6px 8px; font-size: 0.8rem; }
+      .hero-inner { padding: 64px 20px 96px; }
+      #introduction .max-w-7xl,
+      #content-images .max-w-7xl,
+      footer .max-w-7xl { padding: 0 20px; }
+      .toc ul { grid-template-columns: 1fr; }
+    }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <div class="upper-menu">
+    <div class="brand-name">
+      <a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/">Dunlop St Medical Center</a>
+    </div>
+    <div class="menu-links">
+      <a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/">Home</a>
+      <div class="dropdown">
+        <a href="#services" class="dropbtn">Services ▾</a>
+        <div class="dropdown-content" id="servicesDropdown">
+          <ul>
+            <li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/" class="text-blue-600 hover:underline">Walk-In Medical Clinic Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-for-cold-and-flu-in-whitby" class="text-blue-600 hover:underline">Medical Clinic for Cold and Flu in Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-for-infections-in-whitby" class="text-blue-600 hover:underline">Medical Clinic for Infections in Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-for-cuts-burns-and-sprains-in-whitby" class="text-blue-600 hover:underline">Medical Clinic for Cuts, Burns, and Sprains in Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-with-male-and-female-doctors-in-whitby" class="text-blue-600 hover:underline">Medical Clinic with Male and Female Doctors in Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-near-anne-street-and-dundas-street" class="text-blue-600 hover:underline">Medical Clinic Near Anne Street and Dundas Street</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ HERO ══ -->
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Trusted Service Experts</div>
+      <h1>Medical Clinic with Male and Female Doctors in Whitby</h1>
+      <div class="hero-accent-line"></div>
+    </div>
+  </section>
+
+  <!-- ══ BANNER ══ -->
+  <section class="banner-container">
+    <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/1.jpg" alt="Dunlop St Medical Center Banner" class="banner-image">
+  </section>
+
+
+  <!-- ══ INTRODUCTION ══ -->
+  <section id="introduction" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-gray-800 mb-4">People often think that sprains will heal on their own if left untreated. However, untreated sprains can lead to chronic pain and instability if not properly managed. Visiting Dunlop St Medical Center allows patients to receive accurate assessments and guidance for effective recovery.</p>
+<p class="text-gray-800 mb-4">Some individuals believe that they need to wait until their injury is severe before seeking care. This can lead to prolonged recovery times and more complex treatments down the line. By choosing to address injuries early, you can prevent complications and ensure a faster return to your regular activities.</p>
+<p class="text-gray-800 mb-4">Additionally, there is a misconception that medical care for minor injuries is costly and inaccessible. Patients with a valid OHIP card can access our walk-in services without any out-of-pocket expenses for standard care. This means that residents of Whitby can achieve prompt medical assistance without financial worries.</p>
+
+      <!-- IF_LINK_WHEEL_START -->
+      <a href='https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-for-cold-and-flu-in-whitby' class='text-blue-600 hover:underline'>Medical Clinic for Cold and Flu in Whitby | Dunlop St Medical Center</a><br><a href='https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/' class='text-blue-600 hover:underline'>Walk-In Medical Clinic Whitby | Dunlop St Medical Center</a><br><a href='https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-near-anne-street-and-dundas-street' class='text-blue-600 hover:underline'>Medical Clinic Near Anne Street and Dundas Street Whitby Dunlop St Medical Center</a><br>
+      <!-- IF_LINK_WHEEL_END -->
+    </div>
+  </section>
+
+
+  <!-- ══ CONTENT WITH IMAGES ══ -->
+  <section id="content-images" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Row 1 — IMAGE LEFT | CONTENT RIGHT -->
+      <div class="content-row img-left">
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/2.jpeg" alt="Walk-in clinic Whitby">
+        </div>
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>Common Misconceptions About Cuts, Burns, and Sprains</h3>
+<p class="text-gray-800 mb-4">In conclusion, dispelling myths around cuts, burns, and sprains is vital for timely and effective treatment. At Dunlop St Medical Center, we strive to educate our patients on the realities of injury care. If you find yourself dealing with any of these injuries, come see us for reliable and accessible service.</p>
+<p class="text-gray-800 mb-4">Knowing when to seek medical attention for cuts, burns, and sprains can make a significant difference in the healing process. If a cut is deep, bleeding heavily, or shows signs of infection like redness, swelling, or pus, it’s crucial to visit a clinic like Dunlop St Medical Center. Similarly, burns that cover a large area or are accompanied by blisters can require professional evaluation to prevent complications.</p>
+<p class="text-gray-800 mb-4">Sprains can often be mismanaged at home, especially if the swelling and pain become severe. If you experience a limited range of motion or an inability to bear weight on the affected joint, it's time to see a healthcare provider. Our <a href="https://dunlopmedical.ca/walk-in-clinic-whitby/" style="color:blue;">walk-in clinic</a> is open 7 days a week, making it easy for residents in Whitby to get immediate care without an appointment.</p>
+<p class="text-gray-800 mb-4">In situations where burns are caused by chemicals or electrical sources, specialized treatment is often necessary. Immediate medical interventions can include cleaning the burn, applying dressings, and assessing for deeper tissue damage. Dunlop St Medical Center has the capability to handle such situations efficiently and effectively, ensuring that residents receive the necessary care.</p>
+<p class="text-gray-800 mb-4">Fast assessment and treatment are vital for severe injuries to prevent further complications. If your cut, burn, or sprain is accompanied by fevers, increased pain, or swelling, these are red flags that should not be ignored. Visiting our clinic ensures that you have access to prompt care and advice on follow-up measures.</p>
+<p class="text-gray-800 mb-4">Many people are unsure about how to treat minor injuries at home versus when to seek professional help. While it’s often safe to manage small cuts and mild burns with basic first aid, a lack of improvement or worsening symptoms should prompt a visit to the clinic. Our knowledgeable team at Dunlop St Medical Center is trained to provide clear guidance on managing your specific injury effectively.</p>
+        </div>
+      </div>
+
+      <!-- Row 2 — CONTENT LEFT | IMAGE RIGHT -->
+      <div class="content-row img-right">
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>Signs You Need Immediate Care for Cuts, Burns, and Sprains</h3>
+<p class="text-gray-800 mb-4">Injuries like sprains can lead to long-term mobility issues if not treated properly. Seeking professional help not only alleviates immediate discomfort but also provides a plan for rehabilitation and recovery. Schedule a visit to Dunlop St Medical Center for a thorough assessment and a personalized treatment plan tailored to your needs.</p>
+<p class="text-gray-800 mb-4">When you arrive at Dunlop St Medical Center for a cut, burn, or sprain, you can expect a quick and efficient check-in process. Our staff will ask you a few straightforward questions regarding your injury, medical history, and current symptoms. This initial assessment helps prioritize your treatment, so you receive care based on the urgency of your condition.</p>
+<p class="text-gray-800 mb-4">Once you are in the examination room, a healthcare professional will evaluate the injury thoroughly. This examination may involve a physical assessment, checking for signs of infection, or testing the range of motion with sprains. Residents from nearby neighborhoods often appreciate the personal attention and clarity provided during these assessments.</p>
+<p class="text-gray-800 mb-4">If treatment is needed, you will receive specific care tailored to your injury. For cuts that require stitches, our team can perform this service right at the clinic, allowing for a streamlined process. Burns may require specialized dressings, and we can offer guidance on proper aftercare to ensure your injury heals well.</p>
+<p class="text-gray-800 mb-4">In cases of sprains, various treatment options may be available, including immobilization, pain relief, and recommendations for physical therapy. Our clinic is equipped to address these needs promptly, so you can feel confident in your recovery plan. As a Whitby resident, you have access to quality care that minimizes downtime and maximizes healing.</p>
+<p class="text-gray-800 mb-4">After your treatment, follow-up instructions will be provided to help you manage your injury at home. This care plan may include recommendations for rest, elevation, and any prescribed medications. Our goal is to ensure you understand your aftercare, so you feel comfortable as you heal.</p>
+        </div>
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/3.jpeg" alt="Walk-in clinic Whitby services">
+        </div>
+      </div>
+
+      <!-- Row 3 — IMAGE LEFT | CONTENT RIGHT -->
+      <div class="content-row img-left">
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/family-doctor-+whitby.jpg" alt="Family doctor Whitby">
+        </div>
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>What to Expect During Your Visit for Cuts, Burns, and Sprains</h3>
+<p class="text-gray-800 mb-4">If follow-up visits are necessary, our clinic is easily accessible and accepts walk-ins throughout the week. This flexibility means you can return for additional care at your convenience. Don’t hesitate to reach out to Dunlop St Medical Center for any ongoing concerns regarding your injury, as we are here to support your recovery.</p>
+<p class="text-gray-800 mb-4">There are many misconceptions about how to treat cuts, burns, and sprains, which can lead to complications if not addressed correctly. One common myth is that all cuts should be treated with hydrogen peroxide, when in fact, it can damage the tissue and delay healing. Instead, gentle cleaning with soap and water is often recommended to effectively prevent infection while promoting healing.</p>
+<p class="text-gray-800 mb-4">Another prevalent myth is that minor burns can be treated with butter or oil to cool the skin. In reality, this can trap heat and worsen the injury. For burns, using cool running water for at least 10-20 minutes is typically advised, and residents in Whitby can trust our clinic for the right treatment protocols.</p>
+<p class="text-gray-800 mb-4">Many believe that treating a sprain involves resting it completely for days on end. While rest is essential, gentle movement can often aid in recovery and prevent stiffness. Our professionals at Dunlop St Medical Center can guide you on the best exercises to incorporate into your recovery process.</p>
+<p class="text-gray-800 mb-4">Some people think that if an injury seems minor, they can delay seeking medical attention. Ignoring or underestimating an injury may result in more complex issues, such as chronic pain or instability. It is always wise to visit our <a href="https://dunlopmedical.ca/walk-in-clinic-whitby/" style="color:blue;">walk-in clinic</a> for an expert opinion, especially if you have any doubts about the severity of your injury.</p>
+<p class="text-gray-800 mb-4">It is also a myth that all injuries heal at the same rate regardless of treatment. Factors like age, medication, and overall health can play significant roles in recovery time. Our healthcare team will assess your individual circumstances and create a tailored plan to encourage swift healing based on your unique needs.</p>
+        </div>
+      </div>
+
+      <!-- Row 4 — CONTENT LEFT | IMAGE RIGHT -->
+      <div class="content-row img-right">
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>Common Myths About Treatment for Cuts, Burns, and Sprains</h3>
+<p class="text-gray-800 mb-4">Educating yourself about proper injury care can drastically improve your outcomes. By debunking these myths and understanding the best practices for cuts, burns, and sprains, you can make informed decisions about your health. Reach out to Dunlop St Medical Center for accurate information and professional treatment, ensuring your injuries heal properly.</p>
+<p class="text-gray-800 mb-4">A child's fever striking at 8pm, a sprained ankle during a weekend soccer game, or a sick note needed before Monday—these are situations that call for reliable walk-in care in Whitby. Local residents often need immediate access to healthcare services without the hassle of an appointment. Whether it's a routine check-up, minor injury, or unexpected illness, people in our community benefit from prompt medical attention.</p>
+<p class="text-gray-800 mb-4">Dunlop St Medical Center is here to provide that crucial support, with both male and female doctors available seven days a week. Patients can walk in at any time, knowing they will receive quality care tailored to their needs. The clinic also operates a full pharmacy on-site for added convenience, ensuring that you can get prescriptions filled without traveling to multiple locations.</p>
+<p class="text-gray-800 mb-4">At Dunlop St Medical Center, patients benefit from a variety of medical expertise provided by both male and female doctors. This diversity is particularly important for patients who may feel more at ease discussing sensitive health issues with a practitioner of a specific gender. Whether you need advice on reproductive health, mental well-being, or general medical concerns, our clinic has the right providers to meet your needs.</p>
+<p class="text-gray-800 mb-4">Each physician at our clinic brings unique experiences and perspectives, enhancing the overall care provided to our community. For instance, young mothers in Whitby may connect more easily with our female doctors who understand the challenges of pregnancy and childcare. This connection can lead to a more open dialogue about health issues, making the visit more productive and reassuring.</p>
+<p class="text-gray-800 mb-4">Men in Whitby who require guidance on conditions like heart health or prostate issues can seek advice from our male doctors who specialize in these areas. This targeted expertise ensures that each patient receives recommendations that are tailored specifically to their conditions and concerns. By having specialists available, we strive to make each visit efficient and relevant to your health needs.</p>
+        </div>
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/whitby-walk-in+clinic.jpg" alt="Whitby walk-in clinic">
+        </div>
+      </div>
+
+      <!-- Row 5 — IMAGE LEFT | CONTENT RIGHT -->
+      <div class="content-row img-left">
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/logo.jpeg" alt="Dunlop St Medical Center Whitby">
+        </div>
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>Access to Diverse Medical Expertise in Whitby</h3>
+<p class="text-gray-800 mb-4">Our clinic is designed to accommodate all walks of life, fostering a welcoming environment for every patient. Many individuals prefer to choose between male and female doctors based on personal comfort, and we support this choice. This flexibility contributes to a more satisfying healthcare experience for everyone who walks through our doors.</p>
+<p class="text-gray-800 mb-4">Dunlop St Medical Center also ensures that no one has to wait long to receive care, regardless of their gender choice in practitioners. Patients can come in for walk-in services every day of the week, allowing them to seek immediate medical attention when needed. Our doctors work together seamlessly to ensure that all patients receive prompt care without sacrificing quality.</p>
+<p class="text-gray-800 mb-4">We understand that comfort and trust are paramount in healthcare relationships. The combination of male and female doctors at our facility not only broadens the range of perspectives but also allows patients to select the practitioner they feel most comfortable with. We invite you to experience our personable and professional care—contact us today to schedule your appointment.</p>
+<p class="text-gray-800 mb-4">Scheduling an appointment at Dunlop St Medical Center is straightforward and convenient. New patients can visit us without an appointment, as we welcome walk-ins seven days a week. Our clinic location on Dunlop Street makes it easy for those in Whitby to find us and receive the care they need on the spot.</p>
+<p class="text-gray-800 mb-4">Upon arrival, you will complete a registration form that collects essential information regarding your medical history and current concerns. We ensure that this process is quick, with most patients spending minimal time filling out necessary paperwork. If you have a valid OHIP card, our billing process is seamless, allowing you to focus on your health.</p>
+<p class="text-gray-800 mb-4">During your visit, you will meet with a doctor who will carefully review your medical history and reason for the visit. This discussion helps the doctor understand your health better and create a tailored approach for your treatment. By allowing patients to be involved in the conversation, we foster a collaborative environment where your input matters.</p>
+        </div>
+      </div>
+
+      <!-- Row 6 — CONTENT LEFT | IMAGE RIGHT -->
+      <div class="content-row img-right">
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>The Appointment Process for New Patients at Dunlop St Medical Center</h3>
+<p class="text-gray-800 mb-4">After your examination, the doctor may recommend necessary tests or procedures based on your symptoms or health goals. If tests are needed, our on-site lab can expedite the process, so you receive results typically within 48-72 hours. This quick turnaround is crucial for patients requiring urgent care or follow-up treatment.</p>
+<p class="text-gray-800 mb-4">Following your visit, you will receive clear instructions about any further actions you may need to take, whether it involves a follow-up appointment or additional tests. Our staff will also provide an easy way for you to reach out with any questions post-visit. We believe that your health should always come first, and we are here to support you every step of the way.</p>
+<p class="text-gray-800 mb-4">To take the first step towards addressing your health concerns, don’t hesitate to visit Dunlop St Medical Center. Our walk-in services are designed to ensure you can receive timely medical attention. Contact us or drop by today—we look forward to welcoming you.</p>
+<p class="text-gray-800 mb-4">At Dunlop St Medical Center, transparency regarding costs and available services is fundamental to our operations. Patients presenting a valid OHIP card can access standard walk-in clinic services without any out-of-pocket expenses. This makes it easier for residents in Whitby to seek the healthcare they need without the burden of high costs.</p>
+<p class="text-gray-800 mb-4">Pharmacy services are also available on-site, providing prescription fills at competitive prices. Many patients find this convenience especially beneficial, eliminating the need for extra trips to separate locations. This integrated approach ensures that all aspects of your care are managed efficiently, often at no additional cost to you.</p>
+<p class="text-gray-800 mb-4">Certain procedures, such as immunizations or specialized blood tests, may incur fees for those without an OHIP card. Our staff is always ready to discuss these potential costs upfront, so you will never face any surprises. This open communication builds trust and helps you make informed decisions about your healthcare.</p>
+        </div>
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/1.jpg" alt="Walk-in clinic Whitby">
+        </div>
+      </div>
+
+      <!-- Row 7 — IMAGE LEFT | CONTENT RIGHT -->
+      <div class="content-row img-left">
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/2.jpeg" alt="Walk-in clinic Whitby">
+        </div>
+        <div class="content-text-wrap">
+          {content_section_7}
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ MAP ══ -->
+  <section style="background:var(--surface); padding:64px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 52px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.965239217616!2d-78.9488871!3d43.8772718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51f41d808c59b%3A0xcca45462058f9263!2sDunlop%20St%20Medical%20Center!5e0!3m2!1sen!2sca!4v1782277057002!5m2!1sen!2sca" width="100%" height="450" style="border:0; border-radius:10px; box-shadow:0 8px 32px rgba(15,23,42,0.1); display:block;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </section>
+
+  <!-- ══ FAQs ══ -->
+  <section id="faqs" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-6">
+        <section class="faq-section space-y-4">
+          <div class="mb-8">
+<h3 class="text-2xl font-semibold mb-4">Frequently Asked Questions</h3>
+
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q How long does it take to get lab results from Dunlop St Medical Center?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A Lab results from tests conducted at Dunlop St Medical Center typically take between 48 to 72 hours to process. Once the results are available, the clinic staff will follow up with you directly to discuss the findings and any necessary next steps.
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q What should I bring to my appointment at the medical clinic near Anne Street and Dundas Street?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A When visiting Dunlop St Medical Center, please bring your OHIP card, as it allows you to access services without any out-of-pocket expense for standard visits. You may also want to bring a list of any medications you are currently taking and any medical records you think may be relevant.
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q Are walk-in services available on weekends at Dunlop St Medical Center?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A Yes, Dunlop St Medical Center is open 7 days a week, including weekends, for walk-in services. This makes it convenient for residents of Whitby to access care when they need it, without the need for an appointment.
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q How can I find out about the costs associated with treatment for cuts, burns, or sprains at your clinic?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A For patients with a valid OHIP card, standard walk-in services, including treatment for cuts, burns, and sprains, are covered at no additional cost. If you do not have an OHIP card, the clinic staff can provide you with clear pricing information upon your arrival.
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q How long does it typically take to get lab results at Dunlop St Medical Center?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A Lab results from on-site tests usually come back within 48-72 hours. If there are any significant findings, the clinic will follow up with you promptly to discuss next steps.
+  </div>
+</details>
+            </div>
+
+        </section>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="max-w-7xl">
+      <div class="grid">
+
+        <!-- Contact -->
+        <div>
+          <h3>Contact Us</h3>
+          <p style="margin-bottom:6px"> Town plaza, 601 Dundas St W Unit#5, Whitby, ON L1N 2N3</p>
+          <p style="margin-bottom:4px">Phone: <a href="tel: (905) 444-4307"> (905) 444-4307</a></p>
+          <p><a href="https://dunlopmedical.ca/" rel="Nofollow">https://dunlopmedical.ca/</a></p>
+          <p><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/sitemap.html" rel="Nofollow">Sitemap</a></p>
+        </div>
+
+        <!-- Important Links -->
+        <div>
+          <h3>Important Links</h3>
+          <ul>
+            <li><a href="https://walk-in-clinic-whitby.netlify.app/" class="text-blue-600 hover:underline">Walk-In Clinic Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/" class="text-blue-600 hover:underline">Whitby Walk In Clinic</a></li>
+<li><a href="https://walk-in-clinic-whitby-d890ed.gitlab.io" class="text-blue-600 hover:underline">Walk-In Clinic</a></li>
+<li><a href="https://walk-in-clinic-whitby.pages.dev/" class="text-blue-600 hover:underline">Family Doctor Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.vercel.app/" class="text-blue-600 hover:underline">Family Doctors in Whitby Accepting New Patients</a></li>
+<li><a href="https://s3.us-east-005.backblazeb2.com/localseorank/walk-in-clinic-whitby/index.html" class="text-blue-600 hover:underline">Whitby Family Practice</a></li>
+<li><a href="https://s3.eu-north-1.amazonaws.com/localseorank/walk-in-clinic-whitby/index.html" class="text-blue-600 hover:underline">Medical Clinic Whitby</a></li>
+<li><a href="https://sites.google.com/view/walk-in-clinic-whitby/home" class="text-blue-600 hover:underline">Walk-In Clinic Whitby</a></li>
+
+          </ul>
+        </div>
+
+        <!-- Social slot -->
+        <div></div>
+
+      </div>
+
+      <div class="footer-bottom">Copyright &copy; 2026 Corehome AppliancesFix.</div>
+    </div>
+  </footer>
+
+  <script>
+    function scrollCarSlider(direction) {
+      const slider = document.getElementById('carSlider');
+      slider.scrollBy({ left: direction * 320, behavior: 'smooth' });
+    }
+  </script>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('faq-open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('faq-open'));
+        if (!isOpen) item.classList.add('faq-open');
+      });
+    });
+
+    // Dropdown flip
+    document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+      dropdown.addEventListener('mouseenter', function() {
+        var content = this.querySelector('.dropdown-content');
+        if (!content) return;
+        content.classList.remove('drop-up');
+        content.style.display = 'block';
+        var rect = content.getBoundingClientRect();
+        var vh = window.innerHeight;
+        if (rect.bottom > vh) {
+          content.classList.add('drop-up');
+          var triggerRect = this.getBoundingClientRect();
+          content.style.maxHeight = (triggerRect.top - 16) + 'px';
+        } else {
+          content.style.maxHeight = (vh - rect.top - 16) + 'px';
+        }
+      });
+      dropdown.addEventListener('mouseleave', function() {
+        var content = this.querySelector('.dropdown-content');
+        if (!content) return;
+        content.style.display = '';
+        content.style.maxHeight = '';
+      });
+    });
+  </script>
+</body>
+</html>

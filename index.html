@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Walk-In Medical Clinic Whitby | Dunlop St Medical Center - Discover more about Walk-In Medical Clinic Whitby..">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/">
+  <link rel="icon" href="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/logo.jpeg" type="image/x-icon">
+  <title>Walk-In Medical Clinic Whitby | Dunlop St Medical Center</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    :root {
+      --bg:       #ffffff;
+      --surface:  #f1f5f9;
+      --surface-2:#e2e8f0;
+      --dark:     #0f172a;
+      --mid:      #334155;
+      --muted:    #64748b;
+      --border:   #e2e8f0;
+      --accent:   #2563eb;
+      --accent-h: #1d4ed8;
+      --accent-pale: #dbeafe;
+      --cyan:     #0ea5e9;
+      --white:    #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.03em;
+    }
+
+    /* ── NAVBAR ── */
+    .upper-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 52px;
+      height: 68px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .brand-name a {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--dark);
+      text-decoration: none;
+      letter-spacing: -0.04em;
+    }
+
+    .brand-name a span { color: var(--accent); }
+
+    .menu-links {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .menu-links a {
+      color: var(--mid);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: 6px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .menu-links a:hover {
+      background: var(--surface);
+      color: var(--dark);
+    }
+
+    .menu-links .contact-btn {
+      background: var(--accent) !important;
+      color: var(--white) !important;
+      padding: 8px 20px !important;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.2s !important;
+    }
+
+    .menu-links .contact-btn:hover {
+      background: var(--accent-h) !important;
+    }
+
+    /* dropdown */
+    .dropdown { position: relative; display: inline-block; }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      background: var(--white);
+      min-width: 230px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 16px 40px rgba(15,23,42,0.12);
+      z-index: 200;
+      overflow: hidden;
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+
+    .dropdown-content::-webkit-scrollbar { width: 5px; }
+    .dropdown-content::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    .dropdown-content.drop-up { top: auto; bottom: calc(100% + 6px); }
+    .dropdown:hover .dropdown-content { display: block; }
+
+    .dropdown-content ul { list-style: none; padding: 6px; }
+
+    .dropdown-content a {
+      color: var(--mid) !important;
+      padding: 9px 14px !important;
+      display: block;
+      font-size: 0.85rem;
+      border-radius: 6px;
+      transition: background 0.12s, color 0.12s;
+    }
+
+    .dropdown-content a:hover {
+      background: var(--surface) !important;
+      color: var(--accent) !important;
+    }
+
+    /* ── HERO ── */
+    #home {
+      position: relative;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      background: var(--dark);
+      overflow: hidden;
+    }
+
+    /* diagonal accent slab — the signature element */
+    #home::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      right: -80px;
+      width: 520px;
+      height: 680px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--cyan) 100%);
+      clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
+      opacity: 0.15;
+    }
+
+    #home::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 64px;
+      background: var(--white);
+      clip-path: polygon(0 100%, 100% 100%, 100% 0);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 96px 52px 120px;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 20px;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 32px;
+      height: 2px;
+      background: var(--cyan);
+    }
+
+    .hero-inner h1 {
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.1;
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
+
+    .hero-inner h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero-accent-line {
+      width: 56px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--cyan));
+      border-radius: 2px;
+      margin-top: 8px;
+    }
+
+    /* ── BANNER ── */
+    .banner-container { width: 100%; overflow: hidden; line-height: 0; }
+    .banner-image { width: 100%; height: 380px; object-fit: cover; display: block; }
+
+    /* ── INTRODUCTION ── */
+    #introduction {
+      background: var(--white);
+      padding: 88px 0 64px;
+    }
+
+    #introduction .max-w-7xl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 52px;
+    }
+
+    .heading h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: var(--dark);
+      position: relative;
+      padding: 20px 28px 20px 32px;
+      background: var(--surface);
+      border-radius: 8px;
+      margin-bottom: 32px;
+      letter-spacing: -0.04em;
+    }
+
+    .heading h1::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(180deg, var(--accent), var(--cyan));
+      border-radius: 4px 0 0 4px;
+    }
+
+    .intro p {
+      font-size: 1.05rem;
+      color: var(--mid);
+      line-height: 1.85;
+      max-width: 820px;
+      margin: 0 auto 22px;
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin: 32px 0;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+
+    .toc ul li a {
+      color: var(--mid);
+      font-weight: 500;
+      font-size: 0.875rem;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.15s;
+    }
+
+    .toc ul li a::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .toc ul li a:hover { color: var(--accent); }
+
+    /* ── CONTENT SECTIONS ── */
+    #content-images {
+      background: var(--surface);
+      padding: 80px 0;
+    }
+
+    #content-images .max-w-7xl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 52px;
+    }
+
+    .content-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: stretch;
+      margin-bottom: 40px;
+      gap: 0;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--white);
+      transition: box-shadow 0.25s;
+    }
+
+    .content-row:hover {
+      box-shadow: 0 12px 48px rgba(15,23,42,0.1);
+    }
+
+    .content-row.img-left .content-img-wrap  { order: 1; }
+    .content-row.img-left .content-text-wrap  { order: 2; }
+    .content-row.img-right .content-text-wrap { order: 1; }
+    .content-row.img-right .content-img-wrap  { order: 2; }
+
+    .content-img-wrap {
+      overflow: hidden;
+      min-height: 400px;
+      position: relative;
+    }
+
+    .content-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .content-row:hover .content-img-wrap img { transform: scale(1.04); }
+
+    .content-text-wrap {
+      padding: 48px 52px;
+      background: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .content-row.img-right .content-text-wrap {
+      background: var(--surface);
+    }
+
+    .content-text-wrap h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 16px;
+      letter-spacing: -0.04em;
+    }
+
+    .content-text-wrap h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      color: var(--dark);
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .content-text-wrap p {
+      color: var(--mid);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      margin-bottom: 14px;
+    }
+
+    .content-text-wrap ul,
+    .content-text-wrap ol {
+      color: var(--mid);
+      font-size: 0.93rem;
+      line-height: 1.8;
+      padding-left: 0;
+      margin-bottom: 14px;
+      list-style: none;
+    }
+
+    .content-text-wrap ul li,
+    .content-text-wrap ol li {
+      margin-bottom: 7px;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .content-text-wrap ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .content-text-wrap ol { counter-reset: ol-counter; }
+    .content-text-wrap ol li { counter-increment: ol-counter; }
+    .content-text-wrap ol li::before {
+      content: counter(ol-counter) '.';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 600;
+      color: var(--accent);
+      font-size: 0.85rem;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--accent-pale);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+
+    .sub-section {
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      margin-bottom: 14px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .sub-section:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 16px rgba(37,99,235,0.08);
+    }
+
+    .sub-section h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--dark);
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .sub-section p { color: var(--muted); font-size: 0.875rem; line-height: 1.65; }
+
+    @media (max-width: 768px) {
+      .content-row { grid-template-columns: 1fr; }
+      .content-row.img-left .content-img-wrap,
+      .content-row.img-left .content-text-wrap,
+      .content-row.img-right .content-img-wrap,
+      .content-row.img-right .content-text-wrap { order: unset; }
+      .content-img-wrap { min-height: 220px; }
+      .content-text-wrap { padding: 28px 24px; }
+    }
+
+    /* ── FAQs ── */
+    #faqs {
+      background: var(--white);
+      padding: 88px 0;
+    }
+
+    #faqs .max-w-7xl {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    #faqs h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      font-weight: 700;
+      color: var(--dark);
+      text-align: center;
+      margin-bottom: 10px;
+      letter-spacing: -0.04em;
+    }
+
+    #faqs .faq-subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 48px;
+      font-size: 0.95rem;
+    }
+
+    .faq-section { display: flex; flex-direction: column; gap: 8px; }
+
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: border-color 0.2s;
+    }
+
+    .faq-item:hover { border-color: var(--accent); }
+
+    .faq-question {
+      cursor: pointer;
+      padding: 18px 20px;
+      background: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.93rem;
+      color: var(--dark);
+      border: none;
+      width: 100%;
+      text-align: left;
+      font-family: 'Space Grotesk', sans-serif;
+      transition: background 0.15s;
+    }
+
+    .faq-question:hover { background: var(--surface); }
+
+    .faq-question .faq-icon {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+      color: var(--accent);
+      transition: transform 0.25s, background 0.2s;
+    }
+
+    .faq-open .faq-question { background: var(--accent-pale); }
+    .faq-open .faq-question .faq-icon { transform: rotate(45deg); background: var(--accent); color: var(--white); border-color: var(--accent); }
+
+    .faq-answer {
+      display: none;
+      padding: 16px 20px;
+      background: var(--surface);
+      color: var(--mid);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-open .faq-answer { display: block; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.55);
+      padding: 64px 0 32px;
+    }
+
+    footer .max-w-7xl {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 52px;
+    }
+
+    footer .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+
+    @media (max-width: 768px) {
+      footer .grid { grid-template-columns: 1fr; }
+    }
+
+    footer h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      color: var(--white);
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    footer p, footer a {
+      font-size: 0.85rem;
+      line-height: 1.85;
+      color: rgba(255,255,255,0.5);
+    }
+
+    footer a { text-decoration: none; transition: color 0.15s; }
+    footer a:hover { color: var(--accent); }
+    footer ul { list-style: none; padding: 0; }
+    footer ul li { margin-bottom: 9px; }
+
+    footer ul li a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer ul li a::before {
+      content: '›';
+      color: var(--accent);
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .footer-bottom {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    /* ── WHEEL LINKS ── */
+    .wheel-links-wrapper {
+      margin-top: 36px;
+      padding: 26px;
+      background: var(--surface);
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    /* ── FULL SECTION ── */
+    .full-section { width: 100%; padding: 20px; text-align: center; }
+
+    /* ── MAP ── */
+    .map-embed iframe {
+      border-radius: 10px;
+      box-shadow: 0 8px 32px rgba(15,23,42,0.1);
+      width: 100%;
+      max-width: 1100px;
+      height: 450px;
+      border: none;
+    }
+
+    /* ── SCROLL ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .anim { animation: fadeUp 0.55s ease both; }
+    .anim-d1 { animation-delay: 0.08s; }
+    .anim-d2 { animation-delay: 0.18s; }
+    .anim-d3 { animation-delay: 0.28s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .anim { animation: none; }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .upper-menu { padding: 0 18px; }
+      .menu-links { gap: 2px; }
+      .menu-links a { padding: 6px 8px; font-size: 0.8rem; }
+      .hero-inner { padding: 64px 20px 96px; }
+      #introduction .max-w-7xl,
+      #content-images .max-w-7xl,
+      footer .max-w-7xl { padding: 0 20px; }
+      .toc ul { grid-template-columns: 1fr; }
+    }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <div class="upper-menu">
+    <div class="brand-name">
+      <a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/">Dunlop St Medical Center</a>
+    </div>
+    <div class="menu-links">
+      <a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/">Home</a>
+      <div class="dropdown">
+        <a href="#services" class="dropbtn">Services ▾</a>
+        <div class="dropdown-content" id="servicesDropdown">
+          <ul>
+            <li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/" class="text-blue-600 hover:underline">Walk-In Medical Clinic Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-for-cold-and-flu-in-whitby" class="text-blue-600 hover:underline">Medical Clinic for Cold and Flu in Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-for-infections-in-whitby" class="text-blue-600 hover:underline">Medical Clinic for Infections in Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-for-cuts-burns-and-sprains-in-whitby" class="text-blue-600 hover:underline">Medical Clinic for Cuts, Burns, and Sprains in Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-with-male-and-female-doctors-in-whitby" class="text-blue-600 hover:underline">Medical Clinic with Male and Female Doctors in Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-near-anne-street-and-dundas-street" class="text-blue-600 hover:underline">Medical Clinic Near Anne Street and Dundas Street</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══ HERO ══ -->
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">Trusted Service Experts</div>
+      <h1>Walk-In Medical Clinic Whitby</h1>
+      <div class="hero-accent-line"></div>
+    </div>
+  </section>
+
+  <!-- ══ BANNER ══ -->
+  <section class="banner-container">
+    <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/1.jpg" alt="Dunlop St Medical Center Banner" class="banner-image">
+  </section>
+
+
+  <!-- ══ INTRODUCTION ══ -->
+  <section id="introduction" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-gray-800 mb-4">A child's fever at 8pm, a sprained ankle on a Sunday, a sick note needed before Monday — these are the moments Whitby residents need same-day walk-in care. When urgent health concerns arise, finding timely medical assistance can be crucial. Many people look for a reliable option that offers quick treatment without the long wait typically associated with regular appointments or emergency rooms.</p>
+<p class="text-gray-800 mb-4">In Whitby, individuals and families often require rapid care for minor illnesses, injuries, or prescription refills. Walk-in medical clinics serve as convenient alternatives, helping alleviate the pressures of unexpected health situations. Patients seeking speedy consultations and treatment will find that local clinics cater specifically to these needs.</p>
+<p class="text-gray-800 mb-4">Dunlop St Medical Center is your trusted option in Whitby, operating seven days a week to accommodate urgent healthcare needs. With no appointment necessary, residents can visit us anytime for services including quick assessments for injuries or illnesses. Our ability to deliver care without the hassle makes us a go-to choice for walk-in medical needs in the community.</p>
+
+      <!-- IF_LINK_WHEEL_START -->
+      <a href='https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-for-infections-in-whitby' class='text-blue-600 hover:underline'>Medical Clinic for Infections in Whitby | Dunlop St Medical Center</a><br><a href='https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-near-anne-street-and-dundas-street' class='text-blue-600 hover:underline'>Medical Clinic Near Anne Street and Dundas Street Whitby Dunlop St Medical Center</a><br><a href='https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/medical-clinic-for-cold-and-flu-in-whitby' class='text-blue-600 hover:underline'>Medical Clinic for Cold and Flu in Whitby | Dunlop St Medical Center</a><br>
+      <!-- IF_LINK_WHEEL_END -->
+    </div>
+  </section>
+
+
+  <!-- ══ CONTENT WITH IMAGES ══ -->
+  <section id="content-images" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Row 1 — IMAGE LEFT | CONTENT RIGHT -->
+      <div class="content-row img-left">
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/2.jpeg" alt="Walk-in clinic Whitby">
+        </div>
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>Understanding Walk-In Services at Dunlop St Medical Center</h3>
+<p class="text-gray-800 mb-4">Dunlop St Medical Center offers a convenient <a href="https://dunlopmedical.ca/walk-in-clinic-whitby/" style="color:blue;">walk-in clinic</a> for residents of Whitby who need immediate care without the hassle of scheduling an appointment. Many patients come in for minor injuries, illnesses, or urgent health concerns, such as a sudden ear infection or a sprained wrist. Open seven days a week, including weekends, our clinic is easily accessible for any unexpected healthcare needs.</p>
+<p class="text-gray-800 mb-4">Each visit to our walk-in clinic typically includes a thorough assessment to ensure all urgent concerns are addressed. Patients often experience a wait time of less than an hour for non-life-threatening conditions. This allows families to receive the timely care they need, whether it's for a child's fever or an adult's unexpected migraine.</p>
+<p class="text-gray-800 mb-4">Our walk-in clinic is equipped to handle a variety of medical issues, from common colds to more complex conditions that require immediate attention. For instance, if you experience a laceration that may need stitches, you’ll receive prompt treatment and care right away. We also offer immunizations during walk-in visits, which is essential for keeping your family healthy.</p>
+<p class="text-gray-800 mb-4">Patients can expect their lab results from onsite tests, such as strep throat or urine analysis, to return within 48-72 hours. This rapid turnaround not only helps in efficient diagnosis but also in implementing a treatment plan without delay. Whether you’re a local resident in downtown Whitby or just visiting, our clinic is here to support you.</p>
+<p class="text-gray-800 mb-4">Walk-in services are particularly beneficial for individuals who might not have a family doctor or for those who cannot wait for an appointment. People new to the area or those with unpredictable schedules find great advantage in this flexibility. It ensures that healthcare is accessible, providing reassurance when medical issues arise unexpectedly.</p>
+<p class="text-gray-800 mb-4">For added convenience, our clinic accepts patients with a valid OHIP card, meaning that many walk-in services come at no cost. This makes receiving necessary medical attention easier for residents without the burden of additional expenses. If you’re ever uncertain about whether to visit our walk-in clinic, remember that prompt care can often mean better health outcomes.</p>
+        </div>
+      </div>
+
+      <!-- Row 2 — CONTENT LEFT | IMAGE RIGHT -->
+      <div class="content-row img-right">
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>How to Prepare for Your Walk-In Appointment</h3>
+<p class="text-gray-800 mb-4">Preparing for a walk-in appointment at Dunlop St Medical Center can enhance your visit and ensure you receive the best care possible. Before heading to the clinic, it's important to gather any necessary health information such as a list of current medications or any prior medical history that may be relevant. This could include details about allergies or previous hospital visits that could assist our medical professionals during your assessment.</p>
+<p class="text-gray-800 mb-4">When you arrive at the clinic, there is a streamlined check-in process designed to get you seen quickly. You'll fill out an information form that helps us understand your medical needs, and then you'll wait in our comfortable waiting area. Knowing what to expect can ease any anxiety, especially for first-time visitors or those coming in for their children.</p>
+<p class="text-gray-800 mb-4">Bring your health card and any other identification you have to expedite your check-in procedures. For clients without an OHIP card, establishing a clear understanding of your situation can help clarify any potential fees. Our staff is always ready to assist with questions about costs and accepted insurances.</p>
+<p class="text-gray-800 mb-4">Upon being called in, you’ll meet with one of our clinicians who will take the time to listen attentively to your concerns. They will conduct a thorough examination and recommend any necessary tests or treatments based on their findings. If you’re experiencing specific symptoms, be prepared to discuss them openly for accurate assessment and management.</p>
+<p class="text-gray-800 mb-4">After your appointment, follow any instructions given by our healthcare providers to ensure proper recovery or management of the condition. It's also wise to schedule follow-up appointments if additional care is needed, whether at our clinic or with a specialist. This ensures continuity in your treatment plan and supports your overall health maintenance.</p>
+<p class="text-gray-800 mb-4">Receiving care at Dunlop St Medical Center means you can expect clear communication throughout your visit. It’s important to feel comfortable asking questions or expressing concerns about your treatment. With a focus on transparency, we ensure you understand the next steps in your care, whether it includes medications, referrals, or lifestyle recommendations.</p>
+        </div>
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/3.jpeg" alt="Walk-in clinic Whitby services">
+        </div>
+      </div>
+
+      <!-- Row 3 — IMAGE LEFT | CONTENT RIGHT -->
+      <div class="content-row img-left">
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/family-doctor-+whitby.jpg" alt="Family doctor Whitby">
+        </div>
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>Common Health Concerns Addressed in Our Walk-In Clinic</h3>
+<p class="text-gray-800 mb-4">The <a href="https://dunlopmedical.ca/walk-in-clinic-whitby/" style="color:blue;">walk-in clinic</a> at Dunlop St Medical Center addresses a wide array of health concerns that many community members face. Common issues include respiratory infections, skin rashes, and gastrointestinal upsets, where quick diagnosis and treatment can lead to better resolutions. For instance, someone with a suspected strep throat can often have that identified within just minutes, allowing for prompt intervention.</p>
+<p class="text-gray-800 mb-4">In addition to acute illnesses, our clinic provides care for minor injuries such as sprains, cuts, and fractures. A common reason for visits is sports-related injuries, especially for children and adolescents involved in local teams. Immediate assessment and treatment can often prevent further complications, allowing young athletes to return to their activities.</p>
+<p class="text-gray-800 mb-4">Another frequently addressed concern is seasonal allergies. Residents of Whitby may come in experiencing symptoms ranging from sneezing and congestion to itchy eyes. Our clinical team can recommend appropriate over-the-counter remedies or prescribe stronger medications as necessary.</p>
+<p class="text-gray-800 mb-4">Preventive health measures also feature prominently in our services, including vaccinations for flu or tetanus. Parents often bring their children in for routine immunizations as recommended by health authorities, which helps protect the community. Staying up to date with vaccinations is essential, especially for school-age children and those with compromised immune systems.</p>
+<p class="text-gray-800 mb-4">Patients experiencing chronic conditions, such as hypertension or diabetes, may also utilize our walk-in clinic for routine monitoring and management. Our staff can provide blood pressure checks or blood sugar monitoring, ensuring ongoing support for their health management plans. This accessibility is especially crucial for residents who may struggle to see their family doctor regularly.</p>
+<p class="text-gray-800 mb-4">Understanding the variety of issues our walk-in clinic addresses helps Whitby residents feel confident in seeking the care they need. Whether dealing with an injury from a local park’s sports field or a sudden illness, our services are designed to meet your immediate health concerns efficiently. Contact us today to learn more or visit our clinic when you need care.</p>
+        </div>
+      </div>
+
+      <!-- Row 4 — CONTENT LEFT | IMAGE RIGHT -->
+      <div class="content-row img-right">
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>Why Choose Dunlop St Medical Center for Walk-In Services</h3>
+<p class="text-gray-800 mb-4">Dunlop St Medical Center stands out in the Whitby area for its accessibility and comprehensive range of walk-in services. Open seven days a week, we cater to all age groups, ensuring that urgent healthcare is available when you need it most. Whether it's midday or late evening, our clinic offers the flexibility that busy families require.</p>
+<p class="text-gray-800 mb-4">One of the key advantages of choosing our clinic is the expedited care process. Patients can typically expect shorter wait times compared to larger hospitals, promoting efficiency and convenience. In many cases, you can be seen in under an hour, meaning you spend less time waiting and more time receiving quality care.</p>
+<p class="text-gray-800 mb-4">The focus on local needs sets Dunlop St Medical Center apart from the competition. Residents in Whitby benefit from a facility that understands their unique healthcare requirements, including seasonal illnesses and common injuries associated with local activities. This local knowledge enables our staff to provide tailored advice and treatment options.</p>
+<p class="text-gray-800 mb-4">We also emphasize the importance of follow-up care, which can enhance the outcomes of workplace injuries or post-illness recovery. Patients are encouraged to return if symptoms persist or worsen, ensuring that they have the ongoing support they need. Our team is dedicated to not only resolving immediate issues but also providing guidance for long-term health.</p>
+<p class="text-gray-800 mb-4">Patients can also take comfort in our clinic's transparent billing practices. With many services covered for those with a valid OHIP card, individuals can access necessary care without the added burden of unexpected costs. This makes it easier for the community to prioritize healthcare, knowing they have a trusted local option.</p>
+<p class="text-gray-800 mb-4">Ready to visit? Dunlop St Medical Center is here to help with walk-in services that are just around the corner. Whether you have an urgent question or a health concern, connect with us today so we can assist you in maintaining your wellness.</p>
+        </div>
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/whitby-walk-in+clinic.jpg" alt="Whitby walk-in clinic">
+        </div>
+      </div>
+
+      <!-- Row 5 — IMAGE LEFT | CONTENT RIGHT -->
+      <div class="content-row img-left">
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/logo.jpeg" alt="Dunlop St Medical Center Whitby">
+        </div>
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>Common Conditions Treated at Dunlop St Medical Center's Walk-In Clinic</h3>
+<p class="text-gray-800 mb-4">Many residents in Whitby use Dunlop St Medical Center's walk-in clinic for a variety of acute illnesses and injuries. Common conditions include colds, flu symptoms, skin rashes, sprains, and minor cuts. Each of these conditions can often be addressed on the same day, allowing patients to avoid the lengthy wait times that can occur in emergency rooms.</p>
+<p class="text-gray-800 mb-4">For families with young children, the walk-in clinic provides essential services like pediatric care for sudden fevers and viral infections. Parents can visit the clinic seven days a week without needing to book an appointment in advance. This accessibility is especially crucial for busy families who require prompt care for their little ones.</p>
+<p class="text-gray-800 mb-4">In addition to treating common infections and injuries, the clinic offers services for chronic conditions, including asthma management and allergy consultations. Residents can receive personalized evaluation and management plans tailored to their specific health concerns. A follow-up visit can typically be arranged during the same week if additional care is needed.</p>
+<p class="text-gray-800 mb-4">The team at Dunlop St Medical Center can also assist with routine health concerns, such as urinary tract infections and gastroenteritis. These conditions are often uncomfortable and disruptive, making timely care essential for many patients. Most services provided during a walk-in visit are covered under OHIP for those with valid health cards.</p>
+<p class="text-gray-800 mb-4">Dunlop St Medical Center features on-site lab testing, ensuring that patients receive timely diagnosis and treatment. Lab results typically take 48 to 72 hours to process, with the physician reaching out directly to discuss findings. This enables patients to quickly understand their condition and engage in the appropriate next steps regarding their health.</p>
+<p class="text-gray-800 mb-4">In addition to clinical expertise, our walk-in clinic emphasizes convenience for Whitby residents. Those requiring a quick prescription refill or a sick note for work can obtain these services without scheduling a traditional appointment. Our operational hours seven days a week cater to various schedules, making us a reliable healthcare provider in the community.</p>
+        </div>
+      </div>
+
+      <!-- Row 6 — CONTENT LEFT | IMAGE RIGHT -->
+      <div class="content-row img-right">
+        <div class="content-text-wrap">
+          <h3 class='text-2xl font-semibold mb-4'>Understanding Walk-In Clinic Hours and Convenience for Whitby Residents</h3>
+<p class="text-gray-800 mb-4">Dunlop St Medical Center's walk-in clinic operates every day of the week to accommodate the diverse schedules of Whitby residents. Whether you are experiencing a health issue on the weekend or need advice after work, our doors are open with no appointment necessary. This flexibility is invaluable for individuals who cannot visit during standard office hours or have unexpected health concerns.</p>
+<p class="text-gray-800 mb-4">Many patients appreciate the time-saving benefits of visiting a walk-in clinic instead of an emergency room. Walk-in visits often involve significantly shorter wait times, allowing patients to receive care without the long delays typically found in hospital settings. This is particularly advantageous for those with minor ailments that require prompt attention but are not life-threatening.</p>
+<p class="text-gray-800 mb-4">Our clinic's extended hours allow residents to seek medical assistance at their convenience throughout the week. For instance, someone might need help for a sore throat or a sudden injury that occurs after regular office hours. We ensure that urgent care is readily accessible for various medical needs, providing peace of mind to individuals and families alike.</p>
+<p class="text-gray-800 mb-4">Additionally, the walk-in clinic’s location on Dunlop Street makes it easy to reach from various neighborhoods in Whitby. Patients can visit us conveniently after dropping their children off at school or on their way home from work. This prime location is a key consideration for those seeking immediate medical attention.</p>
+<p class="text-gray-800 mb-4">At Dunlop St Medical Center, we take pride in our efficient processes. Patients can typically be seen promptly upon arrival without the lengthy registration common in emergency departments. This means you can spend less time waiting and more time receiving the care you need.</p>
+<p class="text-gray-800 mb-4">For anyone unsure when to seek walk-in clinic services versus emergency care, we can help clarify this distinction. Non-life-threatening issues, such as minor injuries, typical infections, and other acute concerns, are ideal for our walk-in clinic. Those experiencing severe symptoms or life-threatening conditions should go to an emergency room instead.</p>
+        </div>
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/1.jpg" alt="Walk-in clinic Whitby">
+        </div>
+      </div>
+
+      <!-- Row 7 — IMAGE LEFT | CONTENT RIGHT -->
+      <div class="content-row img-left">
+        <div class="content-img-wrap">
+          <img src="https://localseorank.s3.eu-north-1.amazonaws.com/walk-in-clinic-whitby/2.jpeg" alt="Walk-in clinic Whitby">
+        </div>
+        <div class="content-text-wrap">
+          {content_section_7}
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ MAP ══ -->
+  <section style="background:var(--surface); padding:64px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 52px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.965239217616!2d-78.9488871!3d43.8772718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d51f41d808c59b%3A0xcca45462058f9263!2sDunlop%20St%20Medical%20Center!5e0!3m2!1sen!2sca!4v1782277057002!5m2!1sen!2sca" width="100%" height="450" style="border:0; border-radius:10px; box-shadow:0 8px 32px rgba(15,23,42,0.1); display:block;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </section>
+
+  <!-- ══ FAQs ══ -->
+  <section id="faqs" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-6">
+        <section class="faq-section space-y-4">
+          <div class="mb-8">
+<h3 class="text-2xl font-semibold mb-4">Frequently Asked Questions</h3>
+
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q Are there age restrictions for receiving care for cold and flu symptoms at Dunlop St Medical Center?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A Dunlop St Medical Center provides care for patients of all ages, including children. If you are bringing a child in for cold or flu symptoms, having their health card and any relevant medical history can be very helpful during the appointment.
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q What happens during a walk-in appointment at Dunlop St Medical Center?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A During a walk-in appointment at Dunlop St Medical Center, you will first complete a brief intake form to provide information about your health concerns. A healthcare provider will then assess your condition, discuss treatment options, and if needed, refer you for further testing or specialist care.
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q Can I get prescriptions filled at the medical clinic near Anne Street and Dundas Street?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A Yes, Dunlop St Medical Center includes an on-site pharmacy that allows you to have your prescriptions filled immediately after your appointment. Our staff is trained to assist you with medication questions and provide you with the necessary instructions for your treatment.
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q Is there a cost for services at Dunlop St Medical Center if I don’t have an OHIP card?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A If you do not have an OHIP card, services at Dunlop St Medical Center may be subject to a fee. The clinic's staff can provide you with a clear outline of costs for various services during your visit, so you can make an informed decision.
+  </div>
+</details>
+            
+<details class="mb-4 bg-gray-50 p-4 rounded-lg">
+  <summary class="font-semibold text-lg cursor-pointer hover:text-blue-600 transition-colors">Q Are there costs associated with services at the medical clinic if I don't have an OHIP card?</summary>
+  <div class="faq-content mt-3 text-gray-700">
+    A If you do not have an OHIP card, fees for services at Dunlop St Medical Center will depend on the specific care you require. We recommend contacting our clinic beforehand to discuss expected costs and payment options.
+  </div>
+</details>
+            </div>
+
+        </section>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="max-w-7xl">
+      <div class="grid">
+
+        <!-- Contact -->
+        <div>
+          <h3>Contact Us</h3>
+          <p style="margin-bottom:6px"> Town plaza, 601 Dundas St W Unit#5, Whitby, ON L1N 2N3</p>
+          <p style="margin-bottom:4px">Phone: <a href="tel: (905) 444-4307"> (905) 444-4307</a></p>
+          <p><a href="https://dunlopmedical.ca/" rel="Nofollow">https://dunlopmedical.ca/</a></p>
+          <p><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/sitemap.html" rel="Nofollow">Sitemap</a></p>
+        </div>
+
+        <!-- Important Links -->
+        <div>
+          <h3>Important Links</h3>
+          <ul>
+            <li><a href="https://walk-in-clinic-whitby.netlify.app/" class="text-blue-600 hover:underline">Walk-In Clinic Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.github.io/walk-in-clinic-whitby/" class="text-blue-600 hover:underline">Whitby Walk In Clinic</a></li>
+<li><a href="https://walk-in-clinic-whitby-d890ed.gitlab.io" class="text-blue-600 hover:underline">Walk-In Clinic</a></li>
+<li><a href="https://walk-in-clinic-whitby.pages.dev/" class="text-blue-600 hover:underline">Family Doctor Whitby</a></li>
+<li><a href="https://walk-in-clinic-whitby.vercel.app/" class="text-blue-600 hover:underline">Family Doctors in Whitby Accepting New Patients</a></li>
+<li><a href="https://s3.us-east-005.backblazeb2.com/localseorank/walk-in-clinic-whitby/index.html" class="text-blue-600 hover:underline">Whitby Family Practice</a></li>
+<li><a href="https://s3.eu-north-1.amazonaws.com/localseorank/walk-in-clinic-whitby/index.html" class="text-blue-600 hover:underline">Medical Clinic Whitby</a></li>
+<li><a href="https://sites.google.com/view/walk-in-clinic-whitby/home" class="text-blue-600 hover:underline">Walk-In Clinic Whitby</a></li>
+
+          </ul>
+        </div>
+
+        <!-- Social slot -->
+        <div></div>
+
+      </div>
+
+      <div class="footer-bottom">Copyright &copy; 2026 Corehome AppliancesFix.</div>
+    </div>
+  </footer>
+
+  <script>
+    function scrollCarSlider(direction) {
+      const slider = document.getElementById('carSlider');
+      slider.scrollBy({ left: direction * 320, behavior: 'smooth' });
+    }
+  </script>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const item = this.closest('.faq-item');
+        const isOpen = item.classList.contains('faq-open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('faq-open'));
+        if (!isOpen) item.classList.add('faq-open');
+      });
+    });
+
+    // Dropdown flip
+    document.querySelectorAll('.dropdown').forEach(function(dropdown) {
+      dropdown.addEventListener('mouseenter', function() {
+        var content = this.querySelector('.dropdown-content');
+        if (!content) return;
+        content.classList.remove('drop-up');
+        content.style.display = 'block';
+        var rect = content.getBoundingClientRect();
+        var vh = window.innerHeight;
+        if (rect.bottom > vh) {
+          content.classList.add('drop-up');
+          var triggerRect = this.getBoundingClientRect();
+          content.style.maxHeight = (triggerRect.top - 16) + 'px';
+        } else {
+          content.style.maxHeight = (vh - rect.top - 16) + 'px';
+        }
+      });
+      dropdown.addEventListener('mouseleave', function() {
+        var content = this.querySelector('.dropdown-content');
+        if (!content) return;
+        content.style.display = '';
+        content.style.maxHeight = '';
+      });
+    });
+  </script>
+</body>
+</html>
